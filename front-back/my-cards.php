@@ -16,7 +16,7 @@
     <script type="application/javascript" src="js/scripts.js"></script>
     <!-- Google Analytics-->
     <!-- Open Graph-->
-    <script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>    
+<script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>    
   </head>
   <body>
     <header class="dark">
@@ -30,36 +30,26 @@
         <h2>My cards</h2>
       </div>
     </div>
-    
     <div class="container add-founds-screen">
-    	
-    <form action="my-cards.php" method="post">
-	<p class="balance">
-	First:Select your found amount
-	</p>
-	<select name="monto">
-	<option value="2000">$20</option>
-	<option value="5000">$50</option>
-	<option value="1000">$100</option>
-	<option value="25000">$250</option>
-	<option value="50000">$500</option>
-	</select>
-	<input type="submit">
-	</form>
-	
-	
-	<p class="balance">
-	Second:Select your card to add founds
-	</p>	
-	
-	
+    	<form action="my-cards.php" method="post">
+      <div class="instructions">
+        <h4>1. Select the amount to transfer:</h4>
+      </div>
+<form action="my-cards.php" method="post">      
+        <select name="monto">
+          <option value="2000" label="$20.00"></option>
+          <option value="3000" label="$30.00"></option>
+          <option value="5000" label="$50.00"></option>
+          <option value="10000" label="$100.00"></option>
+        </select>
+
+        <input type="submit">
+       </form>
+             
     <?php
-$monto=$_POST['monto'];
 
-
-        
 error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
-    
+$monto=$_POST['monto'];    
     
     
 	require 'back/bd/config.php';
@@ -86,7 +76,7 @@ echo'<button
 	
 	}    
 
-    ?>
+    ?>      
     </div>
     <footer>
       <p>Handcrafted with love at #MastersOfCode, Mexico City.</p>

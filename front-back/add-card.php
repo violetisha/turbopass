@@ -16,7 +16,9 @@
     <script type="application/javascript" src="js/scripts.js"></script>
     <!-- Google Analytics-->
     <!-- Open Graph-->
-	<script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>    
+
+<script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>    
+    
   </head>
   <body>
     <header class="dark">
@@ -36,36 +38,27 @@
       </div>
       <form id="" method="post" action="add-card.php">
           <label>Country
-            <input type="text" name="pais" required>
+            <input type="text" value="Tatooine" name="pais" required>
           </label>
           <label>State
-            <input type="text" name="estado" required>
+            <input type="text" value="Bestine" name="estado" required>
           </label>
           <label>Kind of card
-            <input type="text" name="tipo" required>
+            <input type="text" value="Millenial Falcon Card" name="tipo" required>
           </label>
           <label>Card number
-            <input type="number" name="numero" required>
-          </label>
-          <label>Starting amount
-            <input type="text" name="monto" required>
+            <input type="text" value="666 666 666" name="numero" required>
           </label>
         <div class="master-card-button">
-          <!-- Aquí debería ir el botón del pago, que abre el lightbox-->
-          <button type="submit">Add Card</button>
+          <!-- Writes DB-->
+          <button type="submit">Continue</button>
         </div>
+      </form>
+    </div>
+
         <?php
 error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
         
-      echo '<button
-		data-sc-key="sbpb_YWQ5MTRiN2MtYzAxZi00YzIzLTk5ZDEtYzU1NTYwNWYxZjcz"
-        data-name="Primer pago"
-        data-reference="99999"
-        data-amount="'.$_POST['monto'].'"
-        data-color="#09095E"
-        class="button-add">
-        Pay Starting amount
-	</button>';        
 	?>
       </form>
 
@@ -77,12 +70,12 @@ $pais=$_POST['pais'];
 $estado=$_POST['estado'];
 $tipo=$_POST['tipo'];
 $numero=$_POST['numero'];
-$monto=$_POST['monto'];
+$monto=0;
 $usuario_id=1;
 
 
 
-	require 'back/bd/config.php';
+require 'back/bd/config.php';
 $sql ="INSERT INTO tarjeta(img,pais,estado,tipo,numero,monto,usuario_id)
  VALUES ('card-02.png','$pais','$estado','$tipo','$numero','$monto','$usuario_id')";
 $result=mysql_query($sql) or die ("error base de datos:".mysql_error()."<meta http-equiv='REFRESH' content='0,url=index.html'>");

@@ -39,6 +39,7 @@ header
 
 	nav
 		float: right
+		text-transform: uppercase
 		a
 			display: block
 			float: left
@@ -47,6 +48,12 @@ header
 
 			&.active
 				color: white
+button
+	&:focus
+		outline: none
+	&:hover
+		color: white !important
+		cursor: pointer
 
 footer
 	background: $blue
@@ -56,6 +63,9 @@ footer
 	padding: $spacer 0
 	margin-top: $spacer*3
 	line-height: 1.3em
+	width: 100%
+	position: static
+	bottom: 0
 
 	span
 		&:after
@@ -70,7 +80,7 @@ footer
 	background-size: 100%
 
 .picture-home
-	background: url(img/bg-home.jpg) top center no-repeat
+	background: $blue url(img/bg-home.jpg) top center no-repeat
 	background-size: cover
 
 .container
@@ -193,6 +203,7 @@ h3
 			padding-top: $spacer
 			clear: both
 
+
 		.button, button
 			background: $blue
 			color: $cyan
@@ -246,6 +257,20 @@ h3
 .add-card-screen, .add-founds-screen
 	min-height: 300px
 
+	.instructions
+		+clearfix
+
+		h4
+			text-align: left
+			font-size: 1.3em
+			float: left
+			width: auto
+
+		select
+			+scale(1.8, 1.8)
+			float: left
+
+
 	.card
 		width: 30%
 		float: left
@@ -266,16 +291,18 @@ h3
 		width: 70%
 		float: left
 		.master-card-button
-			width: 45%
+			width: 80%
 			float: left
 			margin: 32px 0
 			+box-sizing(border-box)
 			padding: 0 $spacer*2
-		button
-			padding: $spacer/2
-			font-size: 1em
-			&:focus
-				outline: none
+			clear: both
+			text-align: center
+			button
+				padding: $spacer/2
+				display: inline-block
+				font-size: 1em
+
 
 .add-founds-screen
 	.card
