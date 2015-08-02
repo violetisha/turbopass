@@ -1,0 +1,46 @@
+doctype html
+html 
+	include includes/head
+	include includes/mixins
+	body
+		
+		header.dark
+			.container
+				a(href="index.html"): h1.logo TurboPass
+				nav
+					a(href="login.html") Log out
+
+		.title-line
+			.container
+				h2 My cards
+
+
+		.container.add-founds-screen
+
+			a(href="add-founds.html").card
+				img(src="img/card-01.png", alt="New Card")
+				p.balance $50.00
+				.button-add
+					span Add founds
+
+			a(href="add-founds.html").card
+				img(src="img/card-02.png", alt="New Card")
+				p.balance $70.00
+				.button-add
+					span Add founds
+
+			a(href="add-founds.html").card
+				img(src="img/card-03.png", alt="New Card")
+				p.balance $20.00
+				.button-add
+					span Add founds
+
+
+
+
+		include includes/footer
+
+
+		
+
+

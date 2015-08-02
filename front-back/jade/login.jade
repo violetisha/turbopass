@@ -1,0 +1,32 @@
+doctype html
+html 
+	include includes/head
+	include includes/mixins
+	body.picture
+		
+		header
+			.container
+				a(href="index.html"): h1.logo TurboPass
+				nav
+					a(href="index.html") Home
+					a(href="signup.html") Sign Up
+					a(href="login.html").active Log in
+
+		.title
+			h2 Login
+
+		.content.sign-up-screen
+			h3 Account information
+			form(id="", method="", action="")
+				+input("Email", "email")
+				+input("Password", "password")
+	
+				.call-to-action
+					button(type="submit") Sign Up
+
+		include includes/footer
+
+
+		
+
+

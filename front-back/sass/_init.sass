@@ -1,0 +1,37 @@
+//
+// Imports
+// -------------------------------------------
+
+@import "compass/css3"
+@import "compass/reset"
+@import "compass/typography"
+
+//
+// Colres
+// -------------------------------------------
+$blue: #12043A
+$cyan: #00FFCC
+
+
+//
+// Utilidades
+// -------------------------------------------
+$spacer: 20px
+
+
+//
+// Clases silenciosas
+// -------------------------------------------
+%clearfix
+	&:after
+		content: " "
+		display: block
+		clear: both
+
+//
+// Mixines
+// -------------------------------------------
+=varela-round($weight)
+	font-weight: #{$weight}
+	font-family: "Varela Round", sans-serif
+	-webkit-font-smoothing: antialiased
