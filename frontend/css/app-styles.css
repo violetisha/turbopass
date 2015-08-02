@@ -1,5 +1,5 @@
 /*!
- * Compliled at: 2015-08-02 01:16:59 -0500
+ * Compliled at: 2015-08-02 03:34:45 -0500
  */
 @import url("font-awesome.css");
 @import url("http://fonts.googleapis.com/css?family=Varela+Round");
@@ -62,5 +62,6 @@ strong { font-weight: 700; color: black; }
 .cards-screen .card { padding-top: 40px; }
 
 .code-screen .barcode { margin: 40px 0; }
+.code-screen .barcode img { background: white; }
 .code-screen .scan { background: url(img/imagotipo-turbopass.png) top center no-repeat; padding-top: 120px; }
 .code-screen .scan h4 { text-transform: uppercase; }
