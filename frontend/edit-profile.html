@@ -17,42 +17,41 @@
     <!-- Google Analytics-->
     <!-- Open Graph-->
   </head>
-  <body>
-    <header class="dark">
+  <body class="picture">
+    <header>
       <div class="container"><a href="index.html">
           <h1 class="logo">TurboPass</h1></a>
-        <nav><a href="login.html">Log out</a></nav>
+        <nav><a href="index.html">Home</a><a href="signup.html" class="active">Sign Up</a><a href="login.html">Log in</a></nav>
       </div>
     </header>
-    <div class="title-line">
-      <div class="container">
-        <h2>Add founds to my card</h2>
-      </div>
+    <div class="title">
+      <h2>Edit my profile</h2>
     </div>
-    <div class="container add-card-screen">
-      <div class="card"><img src="img/card-01.png" alt="New Card">
-        <p class="balance">$50.00</p>
-      </div>
+    <div class="content sign-up-screen">
+      <h3>Personal Information</h3>
       <form id="" method="" action="">
-          <label>Country
-            <input type="text" value="">
+          <label>First name
+            <input type="text" value="Darth">
           </label>
-          <label>State
-            <input type="text" value="undefined">
+          <label>Last name
+            <input type="text" value="Vader">
           </label>
-          <label>Kind of card
-            <input type="text" value="undefined">
+          <label>Email
+            <input type="email" value="darth.vader@outlook.com">
           </label>
-          <label>Card number
-            <input type="number" value="undefined">
+          <label>Password
+            <input type="password" value="1amYourfath3r">
           </label>
-          <label>Amount to add
-            <input type="text" value="undefined">
+        <label class="third"> <span>Date of birth</span>
+          <input type="number" placeholder="dd" value="30">/ 
+          <input type="number" placeholder="mm" value="02">/ 
+          <input type="number" placeholder="yyyy" value="1958">
+        </label>
+          <label>Phone number
+            <input type="text" value="555 666 4444">
           </label>
-        <div class="master-card-button">
-          <!-- Aquí debería ir el botón del pago, que abre el lightbox-->
-          <button type="button">Pay Amount</button>
-        </div>
+        <label class="full">By continuing, you accept the TurboPass <a href="#">Terms and Conditions. </a></label>
+        <div class="call-to-action"><a href="welcome.html" class="button">Save</a></div>
       </form>
     </div>
     <footer>

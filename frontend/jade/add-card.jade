@@ -22,19 +22,17 @@ html
 				p.balance $0.00
 
 
-			form(id="", method="", action="")
-				+input("Country", "text")
-				+input("State", "text")
+			form(id="", method="", action="my-cards.html")
+				+input("Country", "text", "Tatooine")
+				+input("State", "text", "Bestine")
 
-				+input("Kind of card", "text")
-				+input("Card number", "number")
-
-				+input("Starting amount", "text")
+				+input("Kind of card", "text", "Millenial Falcon Card")
+				+input("Card number", "text", "666 666 666")
 
 				
 				.master-card-button
-					// Aquí debería ir el botón del pago, que abre el lightbox
-					button(type="button" ) Add Card
+					// Writes DB
+					button(type="submit") Continue
 
 
 

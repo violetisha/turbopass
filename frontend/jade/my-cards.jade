@@ -14,12 +14,21 @@ html
 			.container
 				h2 My cards
 
-
 		.container.add-founds-screen
+
+			.instructions
+				h4 1. Select the amount to transfer:
+
+				select
+					option(value="20", label="$20.00")
+					option(value="30", label="$30.00")
+					option(value="50", label="$50.00")
+					option(value="100", label="$100.00")
+
 
 			a(href="add-founds.html").card
 				img(src="img/card-01.png", alt="New Card")
-				p.balance $50.00
+				p.balance $00.00
 				.button-add
 					span Add founds
 
