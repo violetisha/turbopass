@@ -27,9 +27,12 @@ function init() {
 	// Choose a card
 	$('#screen-04 .card').click(function(event) {
 		cardName = $(this).find('h2').text();
+		cardCode = $(this).find('img').attr('data-code');
+
 		$('#screen-04').fadeOut('fast');
 		$('#screen-05').fadeIn('fast');
 		$('#screen-05').find('h3').text(cardName);
+		$('#screen-05').find('img').attr('src', 'img/' + cardCode + '.png');
 	});
 
 }
