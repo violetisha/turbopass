@@ -1,5 +1,5 @@
 /*!
- * Compliled at: 2015-08-02 07:05:35 -0500
+ * Compliled at: 2015-08-02 07:16:24 -0500
  */
 @import url("font-awesome.css");
 @import url("http://fonts.googleapis.com/css?family=Varela+Round");
@@ -71,8 +71,8 @@ h3 { text-align: center; font-size: 1em; padding: 40px 0 20px 0; }
 .sign-up-screen form input, .add-card-screen form input { display: block; width: 100%; background: #00FFCC; border: none; padding: 10px; font-weight: normal; font-family: "Varela Round", sans-serif; -webkit-font-smoothing: antialiased; color: #12043A; font-size: 0.9em; }
 .sign-up-screen form input:focus, .add-card-screen form input:focus { outline: none; }
 .sign-up-screen form .call-to-action, .add-card-screen form .call-to-action { text-align: center; padding-top: 20px; clear: both; }
-.sign-up-screen form button, .add-card-screen form button { background: #12043A; color: #00FFCC; padding: 20px; text-transform: uppercase; font-weight: normal; font-family: "Varela Round", sans-serif; -webkit-font-smoothing: antialiased; border: none; font-size: 1.2em; }
-.sign-up-screen form button:focus, .add-card-screen form button:focus { outline: none; }
+.sign-up-screen form .button, .sign-up-screen form button, .add-card-screen form .button, .add-card-screen form button { background: #12043A; color: #00FFCC; padding: 20px; text-transform: uppercase; font-weight: normal; font-family: "Varela Round", sans-serif; -webkit-font-smoothing: antialiased; border: none; font-size: 1.2em; }
+.sign-up-screen form .button:focus, .sign-up-screen form button:focus, .add-card-screen form .button:focus, .add-card-screen form button:focus { outline: none; }
 
 .title-line { background: #00FFCC; color: #12043A; padding: 20px; }
 .title-line h2 { font-size: 2.5em; padding: 0 0 0 40px; }
