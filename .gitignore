@@ -1,0 +1,5 @@
+graphics/
+*.ai
+.sass-cache/
+.DS_Store
+.sass-cache
