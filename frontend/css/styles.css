@@ -1,5 +1,5 @@
 /*!
- * Compliled at: 2015-08-02 12:17:12 -0500
+ * Compliled at: 2015-08-02 12:30:48 -0500
  */
 @import url("font-awesome.css");
 @import url("http://fonts.googleapis.com/css?family=Varela+Round");
@@ -86,10 +86,14 @@ h3 { text-align: center; font-size: 1em; padding: 40px 0 20px 0; }
 .item i { display: block; font-size: 4em; padding-top: 40px; color: #12043A; }
 .item:hover { background: #00FFCC; }
 
+.instructions { background: #EEE; overflow: hidden; *zoom: 1; padding: 10px; }
+.instructions.light { background: white; padding-top: 50px; }
+.instructions h4 { text-align: left; font-size: 1.3em; float: left; width: auto; margin-left: 40px; line-height: 30px; }
+.instructions select { -moz-transform: scale(1.8, 1.8); -ms-transform: scale(1.8, 1.8); -webkit-transform: scale(1.8, 1.8); transform: scale(1.8, 1.8); float: right; width: 100px; position: relative; left: -50px; top: 10px; }
+.instructions button { float: right; background: #12043A; color: #00FFCC; padding: 10px; text-transform: uppercase; font-weight: normal; font-family: "Varela Round", sans-serif; -webkit-font-smoothing: antialiased; border: none; font-size: 0.8em; }
+.instructions button:focus { outline: none; }
+
 .add-card-screen, .add-founds-screen { min-height: 300px; }
-.add-card-screen .instructions, .add-founds-screen .instructions { overflow: hidden; *zoom: 1; }
-.add-card-screen .instructions h4, .add-founds-screen .instructions h4 { text-align: left; font-size: 1.3em; float: left; width: auto; }
-.add-card-screen .instructions select, .add-founds-screen .instructions select { -moz-transform: scale(1.8, 1.8); -ms-transform: scale(1.8, 1.8); -webkit-transform: scale(1.8, 1.8); transform: scale(1.8, 1.8); float: left; }
 .add-card-screen .card, .add-founds-screen .card { width: 30%; float: left; background: #FF0074; margin-top: 40px; }
 .add-card-screen .card img, .add-founds-screen .card img { display: block; margin: 0 auto; }
 .add-card-screen .card p, .add-founds-screen .card p { background: white; padding: 20px 0; font-weight: bold; text-align: center; font-size: 1.2em; }
