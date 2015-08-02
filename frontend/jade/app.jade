@@ -1,0 +1,62 @@
+doctype html
+html 
+	include includes/head
+	body
+		
+		#screen-01.splash-screen
+			h1.logo TurboPass
+
+		#screen-02.welcome-screen
+			h2.logo TurboPass
+
+			nav
+				ul
+					li: a(href="web.html") Sign Up
+					li: a(href="#screen-03")#login-button Log In
+
+		#screen-03.login-screen
+			.top-bar
+				a(href="#screen-02") 
+					i.fa.fa-chevron-left
+				h3 Log in
+				
+			form(id="", method="", action="")
+				input(type="email", placeholder="email")
+				input(type="password", placeholder="password")
+				button(type="submit") Go!
+
+			a(href="web.html", target="_blank") Forgot your password?
+
+		#screen-04.cards-screen
+			.top-bar
+				a(href="#screen-03") 
+					i.fa.fa-chevron-left
+				h3 My Cards
+				
+			.cards
+				.card
+					img(src="img/card-01.png", alt="TatooineBus") 
+					h2 TatooineBus
+
+				.card
+					img(src="img/card-02.png", alt="Kashyyyk Card") 
+					h2 Kashyyyk Card
+
+				.card
+					img(src="img/card-03.png", alt="TatooineBus") 
+					h2 Death Star Station
+
+		#screen-05.code-screen
+			.top-bar
+				a(href="#screen-04") 
+					i.fa.fa-chevron-left
+				h3 Card Name
+
+			.barcode
+				img(src="img/barcode.png", alt="barcode")
+
+			.scan
+				h4 Scan your code!
+
+
+

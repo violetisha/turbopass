@@ -1,0 +1,23 @@
+/* TEAM */
+                            
+Nombre: Violeta Rosales
+Role: Front-End Developer
+Site: http://www.violetarosales.com
+Twitter: @violetisha
+Location: Mexico City
+
+Nombre: Ramón Álvarez Pazos
+Role: UI Desinger
+Site: https://www.behance.net/ramonpazos
+Location: Mexico City
+
+Nombre: Jasiel Jimenez
+Role: Backend Developer
+Location: Mexico City
+
+
+/* SITE */
+                            
+Last update: August 1, 2015
+Standards: HTML5, CSS3
+Components: jQuery

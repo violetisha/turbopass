@@ -1,0 +1,188 @@
+/*!
+ * Compliled at: #{timestamp()}
+ */
+
+//
+// Imports
+// -------------------------------------------
+@import "init"
+@import url("font-awesome.css")
+@import url("http://fonts.googleapis.com/css?family=Varela+Round")
+
+//
+// Tags
+// -------------------------------------------
+
+body
+	+varela-round(normal)
+	color: $cyan
+	background: $blue
+
+	>div
+		display: none
+		margin: 0 auto
+		position: relative
+		width: 100%
+		height: 100vh
+		text-align: center
+		position: absolute
+
+
+a
+	color: inherit
+	text-decoration: none
+
+strong
+	font-weight: 700
+	color: black
+
+
+
+
+//
+// General Styles
+// -------------------------------------------
+.container
+	max-width: 1000px
+	margin: 0 auto
+	@extend %clearfix
+
+.logo
+	text-indent: 100%
+	overflow: hidden
+	background: url(img/logo-turbopass.png) no-repeat top center
+	background-size: 100%
+	position: absolute
+
+.top-bar
+	background: $cyan
+	color: $blue
+	text-align: center
+	+clearfix
+	line-height: 30px
+	text-transform: uppercase
+
+	a
+		display: block	
+		float: left
+		padding: 3px $spacer/2 0 $spacer/2
+
+	h3
+		font-size: .9em
+		padding: 3px $spacer/2 0 $spacer/2
+
+
+.splash-screen
+	display: block
+	background: url(img/bg-splash-app.jpg) top left no-repeat
+	background-size: cover
+
+	h1
+		width: 300px
+		height: 100px
+		top: 50%
+		left: 50%
+		margin-top: -50px
+		margin-left: -150px
+
+.welcome-screen
+	//display: block
+	background: url(img/bg-welcome-app.jpg) top left no-repeat
+	background-size: cover
+
+	h2
+		width: 250px
+		height: 80px
+		top: 50%
+		left: 50%
+		margin-top: -40px
+		margin-left: -125px
+
+	nav
+		position: absolute
+		bottom: 0
+		width: 100%
+		li
+			&:first-of-type a
+				background: $blue
+			&:last-of-type a
+				background: $cyan
+				color: $blue
+			a
+				display: block
+				padding: $spacer
+				text-transform: uppercase
+				font-size: 1.1em
+				&:hover
+					font-weight: bold
+			
+.login-screen
+	//display: block
+	
+	form
+		padding: $spacer*2 0 0 0
+
+	input
+		display: block
+		margin: 0 auto $spacer auto
+		padding: $spacer/2
+		background: none
+		border: none
+		border-bottom: 2px solid $cyan
+		width: 300px
+		+varela-round(normal)
+		text-align: center
+		color: white
+		font-size: 1em
+
+		&:focus
+			outline: none
+			border-bottom: 2px solid white
+
+		+input-placeholder
+			color: darken($cyan, 20)
+			text-transform: uppercase
+			text-align: center
+
+	button
+		background: $cyan
+		color: $blue
+		border: none
+		padding: $spacer/2
+		font-size: 1.5em
+		text-transform: uppercase
+		width: 300px
+		margin-bottom: $spacer/2
+		+varela-round(bold)
+
+	a
+		font-size: .8em
+
+.cards-screen
+	//display: block
+	
+	.cards
+		img
+			background: $cyan
+			+border-radius($spacer/4)
+	.card
+		padding-top: $spacer*2
+
+.code-screen
+	//display: block
+
+	.barcode
+		margin: $spacer*2 0
+
+	.scan
+		background: url(img/imagotipo-turbopass.png) top center no-repeat
+		padding-top: 120px
+
+		h4
+			text-transform: uppercase
+
+
+
+
+
+
