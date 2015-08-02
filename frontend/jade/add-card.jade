@@ -1,0 +1,50 @@
+doctype html
+html 
+	include includes/head
+	include includes/mixins
+	body
+		
+		header.dark
+			.container
+				a(href="index.html"): h1.logo TurboPass
+				nav
+					a(href="login.html") Log out
+
+		.title-line
+			.container
+				h2 Add Card
+
+
+		.container.add-card-screen
+
+			.card
+				img(src="img/card-01.png", alt="New Card")
+				p.balance $0.00
+
+
+			form(id="", method="", action="")
+				+input("Country", "text")
+				+input("State", "text")
+
+				+input("Kind of card", "text")
+				+input("Card number", "number")
+
+				+input("Starting amount", "text")
+
+				
+				.master-card-button
+					// Aquí debería ir el botón del pago, que abre el lightbox
+					button(type="button" ) Add Card
+
+
+
+
+
+
+
+		include includes/footer
+
+
+		
+
+

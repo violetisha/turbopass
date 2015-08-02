@@ -1,5 +1,5 @@
 /*!
- * CSS Compilado el: #{timestamp()}
+ * Compliled at: #{timestamp()}
  */
 
 //
@@ -14,9 +14,8 @@
 // -------------------------------------------
 
 body
-	font-family: "Varela Round", sans-serif
-	color: #333
-	background: white url(img/bg-dark.jpg) top center repeat-x
+	+varela-round(normal)
+	color: $blue
 
 a
 	color: inherit
@@ -26,11 +25,288 @@ strong
 	font-weight: 700
 	color: black
 
+header
+	&.dark
+		background: $blue
+
+	padding: $spacer 0
+	color: $cyan
+
+	h1
+		width: 250px
+		height: 75px
+		float: left
+
+	nav
+		float: right
+		a
+			display: block
+			float: left
+			margin-left: $spacer*2
+			line-height: 75px
+
+			&.active
+				color: white
+
+footer
+	background: $blue
+	color: white
+	font-size: .8em
+	text-align: center
+	padding: $spacer 0
+	margin-top: $spacer*3
+	line-height: 1.3em
+
+	span
+		&:after
+			content: " / "
+		&:last-of-type:after
+			content: " "
 //
-// Estilos generales
+// General Styles
 // -------------------------------------------
+.picture
+	background: url(img/bg-landing.jpg) top center no-repeat
+	background-size: 100%
+
+.picture-home
+	background: url(img/bg-home.jpg) top center no-repeat
+	background-size: cover
+
 .container
 	max-width: 1000px
 	margin: 0 auto
 	@extend %clearfix
+
+.content
+	max-width: 800px
+	margin: 0 auto
+	@extend %clearfix
+	background: white
+	min-height: 350px
+
+.logo
+	text-indent: 100%
+	overflow: hidden
+	background: url(img/logo-turbopass.png) no-repeat top center
+	background-size: 100%
+	position: absolute
+
+.title
+	text-align: center
+	margin-bottom: $spacer*2
+
+	h2
+		font-size: 3em
+		text-align: center
+		display: inline-block
+		border: 4px solid $cyan
+		color: $cyan
+		text-transform: uppercase
+		padding: $spacer/2
+		margin: 0 auto
+
+.title-home
+	text-align: center
+	margin-top: $spacer*3
+	
+	h2
+		font-size: 5em
+		text-align: center
+		display: inline-block
+		border: 8px solid $cyan
+		color: $cyan
+		text-transform: uppercase
+		padding: $spacer
+		margin: 0 auto
+
+	h3
+		color: $cyan
+		text-transform: uppercase
+
+
+.call-to-action
+	text-align: center
+	.try-now
+		background: #FF0074
+		color: white
+		text-transform: uppercase
+		padding: $spacer
+		display: inline-block
+
+
+
+h3
+	text-align: center
+	font-size: 1em
+	padding: $spacer*2 0 $spacer 0
+
+.sign-up-screen, .add-card-screen
+	form
+		label
+			display: block
+			width: 45%
+			float: left
+			margin: $spacer 0
+			+box-sizing(border-box)
+			padding: 0 $spacer*2
+
+			&:nth-of-type(odd)
+				margin-left: 5%
+
+			&:nth-of-type(even)
+				margin-right: 5%
+
+			&.full
+				width: 100%
+				float: none
+				clear: both
+				text-align: center
+
+			&.third
+				span
+					display: block
+					clear: both
+
+				input
+					width: 50px
+					display: inline-block
+					margin: 0 $spacer/4
+					&:before
+						content: " / "
+						display: inline-block
+				
+		input
+			display: block
+			width: 100%
+			background: $cyan
+			border: none
+			padding: $spacer/2
+			+varela-round(normal)
+			color: $blue
+			font-size: .9em
+			&:focus
+				outline: none
+
+		.call-to-action
+			text-align: center
+			padding-top: $spacer
+			clear: both
+
+		button
+			background: $blue
+			color: $cyan
+			padding: $spacer
+			text-transform: uppercase
+			+varela-round(normal)
+			border: none
+			font-size: 1.2em
+			&:focus
+				outline: none
+
+.title-line
+	background: $cyan
+	color: $blue
+	padding: $spacer
+
+	h2
+		font-size: 2.5em
+		padding: 0 0 0 $spacer*2
+		span
+			font-size: .7em
+			display: block
+
+
+
+.item
+	display: block
+	float: left
+	width: 23%
+	margin: $spacer*2 1%
+	+box-sizing(border-box)
+	border: 3px solid $cyan
+	text-align: center
+	+single-transition(.3s, background)
+
+	h3
+		text-align: center
+		font-size: 1em
+		padding: $spacer*2 0
+
+	i
+		display: block
+		font-size: 4em
+		padding-top: $spacer*2
+		color: $blue
+
+	&:hover
+		background: $cyan
+
+
+.add-card-screen, .add-founds-screen
+	min-height: 300px
+
+	.card
+		width: 30%
+		float: left
+		background: #FF0074
+		margin-top: $spacer*2
+		img
+			display: block
+			margin: 0 auto
+		p
+			background: white
+			padding: $spacer 0
+			font-weight: bold
+			text-align: center
+			font-size: 1.2em
+
+
+	form
+		width: 70%
+		float: left
+		.master-card-button
+			width: 45%
+			float: left
+			margin: 32px 0
+			+box-sizing(border-box)
+			padding: 0 $spacer*2
+		button
+			padding: $spacer/2
+			font-size: 1em
+			&:focus
+				outline: none
+
+.add-founds-screen
+	.card
+		position: relative
+		margin-right: 3%
+		+single-transition(.3s, background)
+
+		img, .button-add
+			+single-transition(.3s, opacity)
+
+		&:last-of-type
+			margin-right: 0
+
+		.button-add
+			position: absolute
+			top: 30%
+			width: 100%
+			text-align: center
+			font-weight: bold
+			text-transform: uppercase
+			+opacity(0)
+			span
+				background: white
+				padding: $spacer/4
+
+		&:hover
+			background: #FFCCE3
+			img
+				+opacity(.2)
+			.button-add
+				opacity: 1 !important
+
+
 

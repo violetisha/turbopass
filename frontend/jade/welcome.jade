@@ -1,0 +1,41 @@
+doctype html
+html 
+	include includes/head
+	include includes/mixins
+	body
+		
+		header.dark
+			.container
+				a(href="index.html"): h1.logo TurboPass
+				nav
+					a(href="login.html") Log out
+
+		.title-line
+			.container
+				h2 Welcome Darth Vader!
+
+
+		.container
+			a(href="#").item
+				i.fa.fa-user
+				h3 Edit my profile
+
+			a(href="add-card.html").item
+				i.fa.fa-credit-card
+				h3 Add a card
+
+			a(href="add-founds.html").item
+				i.fa.fa-money
+				h3 Add founds to my cards
+
+			a(href="#").item
+				i.fa.fa-sign-out
+				h3 Sign out in mobile devices
+
+
+		include includes/footer
+
+
+		
+
+

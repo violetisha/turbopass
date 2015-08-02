@@ -1,5 +1,5 @@
 /*!
- * Compliled at: 2015-08-02 03:34:45 -0500
+ * Compliled at: 2015-08-02 06:52:07 -0500
  */
 @import url("font-awesome.css");
 @import url("http://fonts.googleapis.com/css?family=Varela+Round");
@@ -58,7 +58,7 @@ strong { font-weight: 700; color: black; }
 .login-screen button { background: #00FFCC; color: #12043A; border: none; padding: 10px; font-size: 1.5em; text-transform: uppercase; width: 300px; margin-bottom: 10px; font-weight: bold; font-family: "Varela Round", sans-serif; -webkit-font-smoothing: antialiased; }
 .login-screen a { font-size: 0.8em; }
 
-.cards-screen .cards img { background: #00FFCC; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.cards-screen .cards img { background: #FF0074; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .cards-screen .card { padding-top: 40px; }
 
 .code-screen .barcode { margin: 40px 0; }

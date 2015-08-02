@@ -1,0 +1,48 @@
+doctype html
+html 
+	include includes/head
+	include includes/mixins
+	body.picture
+		
+		header
+			.container
+				a(href="index.html"): h1.logo TurboPass
+				nav
+					a(href="index.html") Home
+					a(href="signup.html").active Sign Up
+					a(href="login.html") Log in
+
+		.title
+			h2 Sign Up
+
+		.content.sign-up-screen
+			h3 Personal Information
+			form(id="", method="", action="")
+				+input("First name", "text")
+				+input("Last name", "text")
+				
+				+input("Email", "email")
+				+input("Password", "password")
+
+				label.third 
+					span Date of birth
+					input(type="number", placeholder="dd", min="1", max="31") 
+					| / 
+					input(type="number", placeholder="mm", min="1" max="12")
+					| / 
+					input(type="number", placeholder="yyyy", min="1" max="2015")
+
+				+input("Phone number", "number")
+
+				label.full By continuing, you accept the TurboPass 
+					a(href="#") Terms and Conditions. 
+
+				.call-to-action
+					button(type="submit") Sign Up
+
+		include includes/footer
+
+
+		
+
+
