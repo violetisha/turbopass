@@ -30,21 +30,28 @@
         <h2>My cards</h2>
       </div>
     </div>
-    <div class="container add-founds-screen">
-    	<form action="my-cards.php" method="post">
-      <div class="instructions">
-        <h4>1. Select the amount to transfer:</h4>
-      </div>
-<form action="my-cards.php" method="post">      
-        <select name="monto">
-          <option value="2000" label="$20.00"></option>
-          <option value="3000" label="$30.00"></option>
-          <option value="5000" label="$50.00"></option>
-          <option value="10000" label="$100.00"></option>
-        </select>
 
-        <input type="submit">
-       </form>
+    <div class="instructions">
+      <div class="container">
+        <h4>1. Select the amount to transfer:</h4>
+        <form action="my-cards.php" method="post">   
+          <button type="submit" class="button">Confirmar</button>
+          <select>
+            <option value="2000" label="$20.00"></option>
+            <option value="3000" label="$30.00"></option>
+            <option value="5000" label="$50.00"></option>
+            <option value="10000" label="$100.00"></option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <div class="instructions light">
+      <div class="container">
+        <h4>2. Select the card and transfer the funds</h4>
+      </div>
+    </div>
+
+    <div class="container add-founds-screen">
              
     <?php
 
